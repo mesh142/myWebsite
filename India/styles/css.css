@@ -1,0 +1,168 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9; 
+  color: #333;
+}
+
+
+header {
+  background-color: #6b5b95; 
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+
+nav {
+  background-color: #eac4d5; 
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #4a4a4a; 
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  font-family: 'Playfair Display', serif; 
+}
+
+nav ul li a:hover {
+  color: #6b5b95; 
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-radius: 5px;
+}
+
+
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.city-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.city-content {
+  flex: 1 1 50%;
+}
+
+.city-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #6b5b95; 
+}
+
+.city-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.city-content p strong {
+  color: #555;
+}
+
+.city-image {
+  flex: 1 1 45%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.city-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.city-image img:hover {
+  transform: scale(1.05); 
+}
+
+
+footer {
+  background-color: #6b5b95; 
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .city-section {
+    flex-direction: column;
+  }
+
+  .city-image {
+    grid-template-columns: 1fr;
+  }
+}
